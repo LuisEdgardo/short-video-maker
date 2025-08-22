@@ -48,9 +48,7 @@ export class Server {
         { port: this.config.port, mcp: "/mcp", api: "/api" },
         "MCP and API server is running",
       );
-      logger.info(
-        `UI server is running on http://0.0.0.0:${this.config.port}`,
-      );
+      logger.info(`UI server is running on http://0.0.0.0:${this.config.port}`);
     });
 
     server.on("error", (error: Error) => {
@@ -64,4 +62,5 @@ export class Server {
     return this.app;
   }
 }
+
 
