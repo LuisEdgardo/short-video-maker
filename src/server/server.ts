@@ -47,6 +47,7 @@ export class Server {
       logger.info(`Server running on http://0.0.0.0:${this.config.port}`);
     });
 
+
     server.on("error", (error: Error) => {
       logger.error(error, "Error starting server");
     });
@@ -58,6 +59,7 @@ export class Server {
     return this.app;
   }
 }
+
 
 
 
